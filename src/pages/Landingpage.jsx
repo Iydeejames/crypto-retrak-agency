@@ -361,6 +361,4 @@ const StepCard = ({ title, description }) => (
 );
 
 
-// eslint-disable-next-line react/prop-types
-
 export default LandingPage;

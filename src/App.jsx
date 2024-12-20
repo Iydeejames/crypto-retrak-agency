@@ -2,12 +2,14 @@ import './App.css';
 import PropTypes from "prop-types";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import LandingPage from './pages/landingpage';
+
 import Footer from './components/molecule/Footer';
 import Navbar from './components/molecule/Navbar';
-import Blog from './pages/blog';
-import Case from './pages/case';  
+ 
 import Contact from './pages/Contact';
+import LandingPage from './pages/Landingpage';
+import Blog from './pages/Blog';
+import Case from './pages/Case';
 
 
 const Layout = ({ children }) => {
