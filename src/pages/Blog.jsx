@@ -17,7 +17,7 @@ const Blog = () => {
           placeholder="Search..."
           className="w-full px-4 py-2 rounded-l-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
         />
-        <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
+        <button className="px-4 py-2 bg-gray-900 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
           Search
         </button>
       </div>
@@ -50,7 +50,7 @@ const Blog = () => {
             placeholder="Search..."
             className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
-          <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
+          <button className="px-4 py-2 bg-gray-900 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
             <i className="fas fa-search"></i>
           </button>
         </div>
@@ -62,7 +62,7 @@ const Blog = () => {
             placeholder="Search..."
             className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
-          <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
+          <button className="px-4 py-2 bg-gray-900 text-white font-medium rounded-r-md hover:bg-blue-600 transition">
             <i className="fas fa-search"></i>
           </button>
         </div>
