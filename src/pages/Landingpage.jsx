@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ScrollSection from "../components/reusables/ScrollSection";
 import { motion } from "framer-motion";
 
 
 import crypto1 from "../assets/images/crypto1.jpg";
-import crypto2 from "../assets/images/crypto2.jpg";
+//import crypto2 from "../assets/images/crypto2.jpg";
 import crypto5 from "../assets/images/crypto5.jpg";
 import crypto3 from "../assets/images/crypto3.jpg";
 import crypto4 from "../assets/images/crypto4.jpg";
@@ -77,7 +77,7 @@ const LandingPage = () => {
   <div className="max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-gray-800">Innovative Solutions</h2>
     <p className="text-lg mt-4 text-gray-600">
-      Trusted Recovery Expert You Can Rely On; We're Experts
+      Trusted Recovery Expert You Can Rely On; We are Experts
     </p>
     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <FeatureCard
@@ -145,7 +145,7 @@ const LandingPage = () => {
         <div className="flex-1">
           <h3 className="text-3xl font-semibold">Investment Fraud Recovery</h3>
           <p className="mt-4 text-gray-300">
-            Many have fallen victim to fraudulent investment schemes. If you're one of them, get in touch with an expert to begin the recovery process.
+            Many have fallen victim to fraudulent investment schemes. If you are one of them, get in touch with an expert to begin the recovery process.
           </p>
           <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
         </div>
@@ -218,7 +218,7 @@ const LandingPage = () => {
         },
       ].map((testimonial, index) => (
         <div key={index} className="w-full sm:w-80 bg-gray-100 text-gray-800 p-6 rounded-lg shadow-md">
-          <p className="text-sm sm:text-lg italic font-medium text-gray-700">"{testimonial.review}"</p>
+          <p className="text-sm sm:text-lg italic font-medium text-gray-700">&quot;{testimonial.review}&quot;</p>
           <h3 className="mt-4 text-lg sm:text-xl font-bold text-gray-900">{testimonial.name}</h3>
           <div className="mt-4 border-t border-gray-300 pt-4 text-gray-500">
             <p>Verified user</p>
@@ -288,7 +288,7 @@ const LandingPage = () => {
             How do I sign up for the platform?
           </summary>
           <p className="px-6 py-4 text-gray-600">
-            Signing up is easy! Simply click on the "Sign Up Now" button and fill out the necessary information. You’ll receive a confirmation email to complete your registration.
+            Signing up is easy! Simply click on the &quot;Sign Up Now&quot; button and fill out the necessary information. You’ll receive a confirmation email to complete your registration.
           </p>
         </details>
       </div>
@@ -321,7 +321,7 @@ const LandingPage = () => {
             How do I recover my account if I forget my password?
           </summary>
           <p className="px-6 py-4 text-gray-600">
-            If you've forgotten your password, simply click on the "Forgot Password" link on the login page, and follow the instructions to reset your password.
+            If you have forgotten your password, simply click on the &quot;Forgot Password&quot; link on the login page, and follow the instructions to reset your password.
           </p>
         </details>
       </div>
@@ -344,6 +344,7 @@ const LandingPage = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const FeatureCard = ({ title, description }) => (
   <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
     <h3 className="text-2xl font-semibold text-blue-400">{title}</h3>
@@ -351,6 +352,7 @@ const FeatureCard = ({ title, description }) => (
   </div>
 );
 
+// eslint-disable-next-line react/prop-types
 const StepCard = ({ title, description }) => (
   <div className="w-72 m-4 bg-gray-800 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
@@ -358,18 +360,7 @@ const StepCard = ({ title, description }) => (
   </div>
 );
 
-const TestimonialCard = ({ name, quote }) => (
-  <div className="w-72 m-4 bg-gray-800 p-6 rounded-lg shadow-lg">
-    <p className="text-gray-300">{quote}</p>
-    <div className="mt-4 text-blue-400">{name}</div>
-  </div>
-);
 
-const FAQCard = ({ title, description }) => (
-  <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-4">
-    <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
-    <p className="mt-4 text-gray-300">{description}</p>
-  </div>
-);
+// eslint-disable-next-line react/prop-types
 
 export default LandingPage;
