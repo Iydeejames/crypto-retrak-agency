@@ -3,9 +3,9 @@ const Contact = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Header */}
-      <div className="text-center py-16 bg-gradient-to-r from-blue-600 to-indigo-800">
-        <h1 className="text-4xl font-bold">Contact Us</h1>
-        <p className="mt-4 text-lg">We are here to help with any questions or concerns</p>
+      <div className="text-center py-16 bg-white">
+        <h1 className="text-4xl  text-gray-900 font-bold">Contact Us</h1>
+        <p className="mt-4 text-gray-900 text-lg">We are here to help with any questions or concerns</p>
       </div>
 
       {/* Contact Form and Info */}
