@@ -71,47 +71,53 @@ const LandingPage = () => {
 
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-800">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white">Our Features</h2>
-          <p className="text-lg mt-4 text-gray-400">
-            Explore the unique features that make us stand out in the crypto world
-          </p>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard
-              title="Secure Transactions"
-              description="We ensure the highest level of security for every transaction on our platform."
-            />
-            <FeatureCard
-              title="Fast Withdrawals"
-              description="Get your funds quickly with instant withdrawals anytime, anywhere."
-            />
-            <FeatureCard
-              title="Low Fees"
-              description="Enjoy low transaction fees for seamless trading and investment."
-            />
-          </div>
-        </div>
-      </section>
+      <section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-gray-800">Innovative Solutions</h2>
+    <p className="text-lg mt-4 text-gray-600">
+      Trusted Recovery Expert You Can Rely On; We're Experts
+    </p>
+    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <FeatureCard
+        title="Worldwide Recovery Services"
+        description="We specialize in asset recovery with a focus on helping individuals affected by fraudulent investments."
+        titleClass="text-white"
+      />
+      <FeatureCard
+        title="Fraud Recovery Experts"
+        description="A dedicated team formed to recover money from fraudulent investments, drawing from experience in investigative firms."
+        titleClass="text-white"
+      />
+      <FeatureCard
+        title="Binary Options & Investment Fraud"
+        description="We help those who have lost money due to Binary Options and other shady investment firms, aiming to reclaim what’s rightfully theirs."
+        titleClass="text-white"
+      />
+    </div>
+  </div>
+</section>
 
-      {/* How It Works Section */}
-      <section className="py-16 bg-gray-900">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white">How It Works</h2>
-          <p className="text-lg mt-4 text-gray-400">
-            Simple steps to get started with our platform
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center">
-            {['Sign Up', 'Deposit Funds', 'Start Trading'].map((step, index) => (
-              <StepCard
-                key={index}
-                title={step}
-                description={`Description for ${step}`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+{/* How It Works Section */}
+<section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-gray-800">Best in the Industry</h2>
+    <p className="text-lg mt-4 text-gray-600">
+      Professional Services with Dedicated Support
+    </p>
+    <div className="mt-8 flex flex-wrap justify-center">
+      {['Sign Up', 'Deposit Funds', 'Start Trading'].map((step, index) => (
+        <StepCard
+          key={index}
+          title={step}
+          description={`Description for ${step}`}
+          titleClass="text-white"
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Tokenomics Section */}
       <section className="py-16 bg-gray-800">
