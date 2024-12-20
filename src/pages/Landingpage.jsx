@@ -13,6 +13,7 @@ const LandingPage = () => {
   const images = [crypto5, crypto3, crypto4];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -230,9 +231,6 @@ const LandingPage = () => {
 
 
 
-
-
-      {/* FAQ Section */}
       <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto text-center px-4 sm:px-8">
     <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">Our Key Metrics</h2>
@@ -276,21 +274,72 @@ const LandingPage = () => {
 </section>
 
 
-      {/* Call to Action Section */}
-      <section className="py-16 bg-blue-500 text-center">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-white">Ready to Start?</h2>
-          <p className="text-lg mt-4 text-white">
-            Join us today and start your journey into the future of finance.
+      {/* FAQ Section */}
+<section className="py-16 bg-gray-900 text-center">
+  <div className="max-w-7xl mx-auto px-4 sm:px-8">
+    <h2 className="text-3xl sm:text-4xl font-semibold text-white">Frequently Asked Questions</h2>
+    <p className="text-sm sm:text-lg mt-4 text-white">
+      Find answers to common questions about our platform and how to get started.
+    </p>
+    <div className="mt-8 space-y-6">
+      <div className="max-w-3xl mx-auto">
+        <details className="group rounded-lg bg-gray-50 shadow-lg">
+          <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100">
+            How do I sign up for the platform?
+          </summary>
+          <p className="px-6 py-4 text-gray-600">
+            Signing up is easy! Simply click on the "Sign Up Now" button and fill out the necessary information. You’ll receive a confirmation email to complete your registration.
           </p>
-          <a
-            href="#sign-up"
-            className="mt-8 px-8 py-3 text-xl font-semibold text-blue-500 bg-white rounded-lg hover:bg-gray-200"
-          >
-            Sign Up Now
-          </a>
-        </div>
-      </section>
+        </details>
+      </div>
+
+      <div className="max-w-3xl mx-auto">
+        <details className="group rounded-lg bg-gray-50 shadow-lg">
+          <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100">
+            Is my data safe on this platform?
+          </summary>
+          <p className="px-6 py-4 text-gray-600">
+            Absolutely! We use advanced encryption and security protocols to protect your personal and financial information. Your privacy is our top priority.
+          </p>
+        </details>
+      </div>
+
+      <div className="max-w-3xl mx-auto">
+        <details className="group rounded-lg bg-gray-50 shadow-lg">
+          <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100">
+            What cryptocurrencies can I use on this platform?
+          </summary>
+          <p className="px-6 py-4 text-gray-600">
+            We currently support Bitcoin, Ethereum, and several other major cryptocurrencies. You can easily add or withdraw funds using these assets.
+          </p>
+        </details>
+      </div>
+
+      <div className="max-w-3xl mx-auto">
+        <details className="group rounded-lg bg-gray-50 shadow-lg">
+          <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100">
+            How do I recover my account if I forget my password?
+          </summary>
+          <p className="px-6 py-4 text-gray-600">
+            If you've forgotten your password, simply click on the "Forgot Password" link on the login page, and follow the instructions to reset your password.
+          </p>
+        </details>
+      </div>
+
+      <div className="max-w-3xl mx-auto">
+        <details className="group rounded-lg bg-gray-50 shadow-lg">
+          <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100">
+            Can I trade on mobile devices?
+          </summary>
+          <p className="px-6 py-4 text-gray-600">
+            Yes! Our platform is fully mobile-responsive, so you can trade, view balances, and manage your account from your mobile device with ease.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
