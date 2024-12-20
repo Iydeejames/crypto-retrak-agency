@@ -204,15 +204,15 @@ const LandingPage = () => {
     <div className="mt-12 flex flex-wrap justify-center gap-8">
       {[
         {
-          name: 'John Doe',
+          name: 'Fred',
           review: 'This platform has been a game-changer for me. I can track everything in one place, and the interface is so easy to use. Highly recommend it to anyone!',
         },
         {
-          name: 'Jane Smith',
+          name: 'Tomiwa Felix',
           review: 'I was skeptical at first, but this service truly delivers. The support team is quick to respond, and I’ve seen great results. Worth every penny!',
         },
         {
-          name: 'Sam Wilson',
+          name: 'William Smith',
           review: 'Amazing experience! The platform helped me organize my tasks and improved my productivity. I can’t imagine working without it anymore.',
         },
       ].map((testimonial, index) => (
@@ -233,19 +233,48 @@ const LandingPage = () => {
 
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-800">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white">Frequently Asked Questions</h2>
-          <p className="text-lg mt-4 text-gray-400">
-            Find answers to common questions about our platform
-          </p>
-          <div className="mt-8 grid gap-4">
-            {['Sign up easily!', 'Your data is secure', 'Low fees always'].map((faq, index) => (
-              <FAQCard key={index} title={faq} description={`Details about ${faq}`} />
-            ))}
-          </div>
+      <section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto text-center px-4 sm:px-8">
+    <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">Our Key Metrics</h2>
+    <p className="text-sm sm:text-lg mt-4 text-gray-600">
+      A snapshot of how we perform across different areas
+    </p>
+    <div className="mt-12 flex justify-center gap-12 flex-wrap">
+      {/* Circle 1 - 100% Result Driven */}
+      <div className="flex flex-col items-center">
+        <div className="w-32 h-32 bg-blue-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+          100%
         </div>
-      </section>
+        <h3 className="mt-4 text-lg font-medium text-gray-900">Result Driven</h3>
+      </div>
+
+      {/* Circle 2 - 100% Confidentiality */}
+      <div className="flex flex-col items-center">
+        <div className="w-32 h-32 bg-green-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+          100%
+        </div>
+        <h3 className="mt-4 text-lg font-medium text-gray-900">Confidentiality</h3>
+      </div>
+
+      {/* Circle 3 - 90% Response Time */}
+      <div className="flex flex-col items-center">
+        <div className="w-32 h-32 bg-yellow-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+          90%
+        </div>
+        <h3 className="mt-4 text-lg font-medium text-gray-900">Response Time</h3>
+      </div>
+
+      {/* Circle 4 - 45% Corporate Management */}
+      <div className="flex flex-col items-center">
+        <div className="w-32 h-32 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+          45%
+        </div>
+        <h3 className="mt-4 text-lg font-medium text-gray-900">Corporate Management</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Call to Action Section */}
       <section className="py-16 bg-blue-500 text-center">
