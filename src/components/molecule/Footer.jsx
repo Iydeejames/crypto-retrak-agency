@@ -13,8 +13,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Contact Information */}
             <div>
-              <h4 className="font-bold mb-4">Contact Information</h4>
-              <ul>
+              <h4 className="font-bold mb-4 text-xs md:text-base">Contact Information</h4>
+              <ul className="text-xs md:text-base">
                 <li>+1 (757) 235-2717</li>
                 <li>Cryptotrackagency@gmail.com</li>
                 <li>1190 Big Elm, Kansas City, Missouri, USA</li>
@@ -23,7 +23,7 @@ const Footer = () => {
 
             {/* Our Socials Section */}
             <div>
-              <h4 className="font-bold mb-4">Our Socials</h4>
+              <h4 className="font-bold mb-4 text-xs md:text-base">Our Socials</h4>
               <div className="flex space-x-4">
                 <a href="#" target="_blank" rel="noopener noreferrer" className="text-blue-600">
                   <FaFacebookF size={22} />
@@ -37,10 +37,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Logo Section */}
-            <div className="flex flex-col items-center">
-              <img src={Logo} alt="Crypto Retrak Logo" className="h-20" />
-            </div>
+          
           </div>
         </div>
       </div>
