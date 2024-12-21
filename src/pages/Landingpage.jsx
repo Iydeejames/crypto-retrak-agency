@@ -194,7 +194,7 @@ const LandingPage = () => {
 {/* Services Section */}
 <section className="py-16 bg-gray-900 text-white">
   <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-4xl font-bold text-center text-xs sm:text-xl">Cryptocurrency Recovery Services</h2>
+    <h2 className="text-4xl font-bold text-center text-sm sm:text-xl">Cryptocurrency Recovery Services</h2>
     <p className="text-lg mt-4 text-center text-gray-400 text-xs sm:text-base">
       We specialize in Bitcoin and other cryptocurrency recovery services across various situations. Our team ensures that your funds are safely recovered and returned to your account.
     </p>
@@ -203,7 +203,7 @@ const LandingPage = () => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <img src={crypto7} alt="Recovery Services" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
-          <h3 className="text-3xl font-semibold text-xs sm:text-xl">Complete Recovery Services</h3>
+          <h3 className="text-3xl font-semibold text-sm sm:text-xl">Complete Recovery Services</h3>
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             We offer full recovery services including private investigations, tracking, and spy operations. Our proven and secure process ensures your peace of mind.
           </p>
@@ -214,7 +214,7 @@ const LandingPage = () => {
       {/* Investment Scam Trackback */}
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1">
-          <h3 className="text-3xl font-semibold text-xs sm:text-xl">Investment Fraud Recovery</h3>
+          <h3 className="text-3xl font-semibold text-sm sm:text-xl">Investment Fraud Recovery</h3>
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Many have fallen victim to fraudulent investment schemes. If you are one of them, get in touch with an expert to begin the recovery process.
           </p>
@@ -227,7 +227,7 @@ const LandingPage = () => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <img src={crypto9} alt="Academic Upgrade" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
-          <h3 className="text-3xl font-semibold text-xs sm:text-xl">Academic Score Improvement</h3>
+          <h3 className="text-3xl font-semibold text-sm sm:text-xl">Academic Score Improvement</h3>
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Concerned about your academic performance? We guarantee a score upgrade to match your needs without detection by school authorities.
           </p>
@@ -238,7 +238,7 @@ const LandingPage = () => {
       {/* Mobile Phone Security */}
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1">
-          <h3 className="text-3xl font-semibold text-xs sm:text-xl">Mobile Device Security</h3>
+          <h3 className="text-3xl font-semibold text-sm sm:text-xl">Mobile Device Security</h3>
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Your mobile phone contains sensitive information. Our expert team can deploy a covert security solution to monitor and secure your mobile device remotely.
           </p>
@@ -251,7 +251,7 @@ const LandingPage = () => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <img src={crypto6} alt="Spy on Partner" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
-          <h3 className="text-3xl font-semibold text-xs sm:text-xl">Monitor Your Partner</h3>
+          <h3 className="text-3xl font-semibold text-sm sm:text-xl">Monitor Your Partner</h3>
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Suspect your partner isn’t being truthful? With our discreet monitoring solution, you can find out the truth without accessing their device.
           </p>
