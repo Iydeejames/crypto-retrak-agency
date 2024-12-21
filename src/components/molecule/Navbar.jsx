@@ -18,13 +18,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center flex-col">
-          <img
-            src={logo}
-            alt="Crypto Retrak Logo"
-            className="h-16 md:h-20" // Adjusted logo size for small screens
-          />
-          <span className="text-sm text-gray-800 font-bold mt-2">CRYPTO RETRACK AGENCY</span>
-        </div>
+  <img
+    src={logo}
+    alt="Crypto Retrak Logo"
+    className="h-12 sm:h-16 md:h-20" // Adjusted logo size for small screens
+  />
+  <span className="text-xs text-gray-800 font-bold mt-2">CRYPTO RETRACK AGENCY</span>
+</div>
+
 
         {/* Menu Links Section */}
         <div className="hidden md:flex space-x-8 text-gray-800 font-bold text-lg">
