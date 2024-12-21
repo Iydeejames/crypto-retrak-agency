@@ -62,36 +62,22 @@ const Contact = () => {
               <span className="inline-block w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center mr-4">
                 <i className="fas fa-phone-alt text-white"></i>
               </span>
-              <span>+1 (800) 123-4567</span>
+              <span>+1 (757) 235-2717</span>
             </li>
             <li className="flex items-center">
               <span className="inline-block w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center mr-4">
                 <i className="fas fa-envelope text-white"></i>
               </span>
-              <span>support@crypto-trade.com</span>
+              <span>Cryptotrackagency@gmail.com</span>
             </li>
             <li className="flex items-center">
               <span className="inline-block w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center mr-4">
                 <i className="fas fa-map-marker-alt text-white"></i>
               </span>
-              <span>123 Crypto Street, Blockchain City, USA</span>
+              <span>1190 Big Elm, Kansas City, Missouri. USA</span>
             </li>
           </ul>
-          <h3 className="text-xl font-medium mt-8 mb-4">Follow Us</h3>
-          <div className="flex space-x-4">
-            <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center hover:bg-blue-700">
-              <i className="fab fa-facebook-f text-white"></i>
-            </a>
-            <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center hover:bg-blue-700">
-              <i className="fab fa-twitter text-white"></i>
-            </a>
-            <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center hover:bg-blue-700">
-              <i className="fab fa-linkedin-in text-white"></i>
-            </a>
-            <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center hover:bg-blue-700">
-              <i className="fab fa-instagram text-white"></i>
-            </a>
-          </div>
+         
         </div>
       </div>
     </div>
