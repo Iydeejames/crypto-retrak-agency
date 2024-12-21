@@ -83,8 +83,8 @@ const LandingPage = () => {
       {/* Features Section */}
       <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-    <h2 className="text-4xl font-bold text-gray-900">Innovative Solutions</h2>
-    <p className="text-lg mt-4 text-gray-600">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Innovative Solutions</h2>
+    <p className="text-xs sm:text-3xl mt-4 text-gray-600">
       Trusted Recovery Expert You Can Rely On; We are Experts
     </p>
     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -383,7 +383,7 @@ const LandingPage = () => {
 const FeatureCard = ({ title, description }) => (
   <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold text-white">{title}</h3>
-    <p className="mt-4 text-md text-gray-300">{description}</p>
+    <p className="mt-4 text-xs sm:text-3xl text-gray-300">{description}</p>
   </div>
 );
 
