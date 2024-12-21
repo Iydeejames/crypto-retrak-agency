@@ -28,16 +28,16 @@ const Navbar = () => {
 
         {/* Menu Links Section */}
         <div className="hidden md:flex space-x-8 text-gray-800 font-bold text-lg">
-          <Link to="/" className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110">
+          <Link to="/" className="hover:text-red-600 transition duration-300 transform hover:scale-110">
             Home
           </Link>
-          <Link to="/case" className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110">
+          <Link to="/case" className="hover:text-red-600 transition duration-300 transform hover:scale-110">
             Case
           </Link>
-          <Link to="/blog" className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110">
+          <Link to="/blog" className="hover:text-red-600 transition duration-300 transform hover:scale-110">
             Blog
           </Link>
-          <Link to="/contact" className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110">
+          <Link to="/contact" className="hover:text-red-600 transition duration-300 transform hover:scale-110">
             Contact
           </Link>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
+          <button onClick={toggleMenu} className="text-gray-800 hover:text-red-600 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -75,28 +75,28 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4 px-6">
             <Link
               to="/"
-              className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110"
+              className="hover:text-red-600 font-bold transition duration-300 transform hover:scale-110"
               onClick={closeMenu} // Close menu on click
             >
               Home
             </Link>
             <Link
               to="/case"
-              className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110"
+              className="hover:text-red-600 font-bold transition duration-300 transform hover:scale-110"
               onClick={closeMenu} // Close menu on click
             >
               Case
             </Link>
             <Link
               to="/blog"
-              className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110"
+              className="hover:text-red-600 font-bold transition duration-300 transform hover:scale-110"
               onClick={closeMenu} // Close menu on click
             >
               Blog
             </Link>
             <Link
               to="/contact"
-              className="hover:text-[#4B5320] transition duration-300 transform hover:scale-110"
+              className="hover:text-red-600 font-bold transition duration-300 transform hover:scale-110"
               onClick={closeMenu} // Close menu on click
             >
               Contact
