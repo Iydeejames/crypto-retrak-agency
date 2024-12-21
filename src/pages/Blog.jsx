@@ -1,5 +1,9 @@
+import  { useEffect } from 'react';
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-8 px-4">
       {/* Main Heading */}
