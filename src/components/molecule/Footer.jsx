@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="text-white bg-gray-900">
       {/* Top Horizontal Line */}
-      <div className="w-full border-t-2 border-white"></div>
+      <div className="w-5/6 mx-auto border-t-2 border-white"></div>
+
 
       {/* Top Section (Contact Information) */}
       <div className="py-8 px-4 md:px-8 w-full">
@@ -21,7 +22,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Our Socials Section */}
+            {/* Our Socials Section 
             <div>
               <h4 className="font-bold mb-4 text-xs md:text-base">Our Socials</h4>
               <div className="flex space-x-4">
@@ -36,7 +37,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
+            */}
           
           </div>
         </div>
