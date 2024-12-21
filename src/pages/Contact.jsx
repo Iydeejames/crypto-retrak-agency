@@ -68,7 +68,7 @@ const Contact = () => {
               <span className="inline-block w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center mr-4">
                 <i className="fas fa-envelope text-white"></i>
               </span>
-              <span>Cryptotrackagency@gmail.com</span>
+              <span>Cryptoretrackagency@gmail.com</span>
             </li>
             <li className="flex items-center">
               <span className="inline-block w-10 h-10 bg-blue-600 rounded-full flex justify-center items-center mr-4">

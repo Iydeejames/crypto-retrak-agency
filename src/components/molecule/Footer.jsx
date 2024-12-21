@@ -15,7 +15,7 @@ const Footer = () => {
               <h4 className="font-bold mb-4 text-xs md:text-base">Contact Information</h4>
               <ul className="text-xs md:text-base">
                 <li>+1 (757) 235-2717</li>
-                <li>Cryptotrackagency@gmail.com</li>
+                <li>Cryptoretrackagency@gmail.com</li>
                 <li>1190 Big Elm, Kansas City, Missouri, USA</li>
               </ul>
             </div>
