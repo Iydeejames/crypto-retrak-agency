@@ -77,7 +77,6 @@ const Contact = () => {
               <span>1190 Big Elm, Kansas City, Missouri. USA</span>
             </li>
           </ul>
-         
         </div>
       </div>
     </div>

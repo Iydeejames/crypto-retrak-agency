@@ -23,7 +23,7 @@ const Navbar = () => {
             alt="Crypto Retrak Logo"
             className="h-16 md:h-20" // Adjusted logo size for small screens
           />
-          <span className="text-sm text-gray-800 font-bold mt-2">CRYPTO RETRAK AGENCY</span>
+          <span className="text-sm text-gray-800 font-bold mt-2">CRYPTO RETRACK AGENCY</span>
         </div>
 
         {/* Menu Links Section */}
