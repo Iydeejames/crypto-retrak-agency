@@ -84,7 +84,7 @@ const LandingPage = () => {
       <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Innovative Solutions</h2>
-    <p className="text-xs sm:text-3xl mt-4 text-gray-600">
+    <p className="text-xs sm:text-xl mt-4 text-gray-600">
       Trusted Recovery Expert You Can Rely On; We are Experts
     </p>
     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,7 +165,7 @@ const LandingPage = () => {
         <h3 className="text-xl font-semibold text-gray-900">
           Expertise in Crypto Recovery
         </h3>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-xs sm:text-lg text-gray-600">
           Leveraging cutting-edge technology and in-depth knowledge, we help trace and recover lost or stolen cryptocurrency.
         </p>
       </div>
@@ -173,7 +173,7 @@ const LandingPage = () => {
         <h3 className="text-xl font-semibold text-gray-900">
           Financial Asset Restoration
         </h3>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-xs sm:text-lg text-gray-600">
           Our team specializes in tracking down lost funds, offering efficient solutions for individuals and businesses alike.
         </p>
       </div>
@@ -181,7 +181,7 @@ const LandingPage = () => {
         <h3 className="text-xl font-semibold text-gray-900">
           Global Reach and Precision
         </h3>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-xs sm:text-lg text-gray-600">
           With a worldwide network of recovery experts, we ensure no asset remains untraced or unrecovered.
         </p>
       </div>
@@ -383,7 +383,7 @@ const LandingPage = () => {
 const FeatureCard = ({ title, description }) => (
   <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold text-white">{title}</h3>
-    <p className="mt-4 text-xs sm:text-3xl text-gray-300">{description}</p>
+    <p className="mt-4 text-xs sm:text-lg text-gray-300">{description}</p>
   </div>
 );
 
