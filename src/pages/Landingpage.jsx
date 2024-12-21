@@ -75,7 +75,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-gray-800">Innovative Solutions</h2>
+    <h2 className="text-4xl font-bold text-gray-900">Innovative Solutions</h2>
     <p className="text-lg mt-4 text-gray-600">
       Trusted Recovery Expert You Can Rely On; We are Experts
     </p>
@@ -101,23 +101,42 @@ const LandingPage = () => {
 
 {/* How It Works Section */}
 <section className="py-16 bg-white">
-  <div className="max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-gray-800">Best in the Industry</h2>
-    <p className="text-lg mt-4 text-gray-600">
-      Professional Services with Dedicated Support
+  <div className="max-w-7xl mx-auto text-center px-4 sm:px-8">
+    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+      Your Trusted Asset Recovery Partner
+    </h2>
+    <p className="text-sm sm:text-lg mt-4 text-gray-600">
+      Specializing in retrieving, retracing, and retracking lost assets—whether it’s cryptocurrency or money—we ensure rightful ownership is restored.
     </p>
-    <div className="mt-8 flex flex-wrap justify-center">
-      {['Sign Up', 'Deposit Funds', 'Start Trading'].map((step, index) => (
-        <StepCard
-          key={index}
-          title={step}
-          description={`Description for ${step}`}
-          titleClass="text-white"
-        />
-      ))}
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="bg-gray-50 shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Expertise in Crypto Recovery
+        </h3>
+        <p className="mt-4 text-gray-600">
+          Leveraging cutting-edge technology and in-depth knowledge, we help trace and recover lost or stolen cryptocurrency.
+        </p>
+      </div>
+      <div className="bg-gray-50 shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Financial Asset Restoration
+        </h3>
+        <p className="mt-4 text-gray-600">
+          Our team specializes in tracking down lost funds, offering efficient solutions for individuals and businesses alike.
+        </p>
+      </div>
+      <div className="bg-gray-50 shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Global Reach and Precision
+        </h3>
+        <p className="mt-4 text-gray-600">
+          With a worldwide network of recovery experts, we ensure no asset remains untraced or unrecovered.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
 
 
 {/* Services Section */}
@@ -346,16 +365,16 @@ const LandingPage = () => {
 
 // eslint-disable-next-line react/prop-types
 const FeatureCard = ({ title, description }) => (
-  <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-    <h3 className="text-2xl font-semibold text-blue-400">{title}</h3>
+  <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+    <h3 className="text-2xl font-semibold text-white">{title}</h3>
     <p className="mt-4 text-gray-300">{description}</p>
   </div>
 );
 
 // eslint-disable-next-line react/prop-types
 const StepCard = ({ title, description }) => (
-  <div className="w-72 m-4 bg-gray-800 p-6 rounded-lg shadow-lg">
-    <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
+  <div className="w-72 m-4 bg-gray-900 p-6 rounded-lg shadow-lg">
+    <h3 className="text-xl font-semibold text-white">{title}</h3>
     <p className="mt-4 text-gray-300">{description}</p>
   </div>
 );
