@@ -255,47 +255,48 @@ const LandingPage = () => {
 
 
 
-      <section className="py-16 bg-white">
+<section className="py-12 bg-white">
   <div className="max-w-7xl mx-auto text-center px-4 sm:px-8">
-    <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">Our Key Metrics</h2>
-    <p className="text-sm sm:text-lg mt-4 text-gray-600">
+    <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">Our Key Metrics</h2>
+    <p className="text-xs sm:text-sm mt-4 text-gray-600">
       A snapshot of how we perform across different areas
     </p>
-    <div className="mt-12 flex justify-center gap-12 flex-wrap">
+    <div className="mt-8 flex justify-center gap-8 flex-wrap">
       {/* Circle 1 - 100% Result Driven */}
       <div className="flex flex-col items-center">
-        <div className="w-32 h-32 bg-blue-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl sm:text-4xl font-semibold">
           100%
         </div>
-        <h3 className="mt-4 text-lg font-medium text-gray-900">Result Driven</h3>
+        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-medium text-gray-900">Result Driven</h3>
       </div>
 
       {/* Circle 2 - 100% Confidentiality */}
       <div className="flex flex-col items-center">
-        <div className="w-32 h-32 bg-green-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl sm:text-4xl font-semibold">
           100%
         </div>
-        <h3 className="mt-4 text-lg font-medium text-gray-900">Confidentiality</h3>
+        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-medium text-gray-900">Confidentiality</h3>
       </div>
 
       {/* Circle 3 - 90% Response Time */}
       <div className="flex flex-col items-center">
-        <div className="w-32 h-32 bg-yellow-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 bg-yellow-600 text-white rounded-full flex items-center justify-center text-2xl sm:text-4xl font-semibold">
           90%
         </div>
-        <h3 className="mt-4 text-lg font-medium text-gray-900">Response Time</h3>
+        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-medium text-gray-900">Response Time</h3>
       </div>
 
       {/* Circle 4 - 45% Corporate Management */}
       <div className="flex flex-col items-center">
-        <div className="w-32 h-32 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl font-semibold">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl sm:text-4xl font-semibold">
           45%
         </div>
-        <h3 className="mt-4 text-lg font-medium text-gray-900">Corporate Management</h3>
+        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-medium text-gray-900">Corporate Management</h3>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* FAQ Section */}
