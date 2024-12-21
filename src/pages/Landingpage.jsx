@@ -207,7 +207,7 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             We offer full recovery services including private investigations, tracking, and spy operations. Our proven and secure process ensures your peace of mind.
           </p>
-          <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
+          <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
         </div>
       </div>
 
@@ -218,7 +218,7 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Many have fallen victim to fraudulent investment schemes. If you are one of them, get in touch with an expert to begin the recovery process.
           </p>
-          <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
+          <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
         </div>
         <img src={crypto8} alt="Investment Scam" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
@@ -231,7 +231,7 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Concerned about your academic performance? We guarantee a score upgrade to match your needs without detection by school authorities.
           </p>
-          <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
+          <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
         </div>
       </div>
 
@@ -242,7 +242,7 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Your mobile phone contains sensitive information. Our expert team can deploy a covert security solution to monitor and secure your mobile device remotely.
           </p>
-          <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
+          <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
         </div>
         <img src={crypto10} alt="Mobile Security" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
@@ -255,7 +255,7 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Suspect your partner isn’t being truthful? With our discreet monitoring solution, you can find out the truth without accessing their device.
           </p>
-          <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
+          <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
         </div>
       </div>
     </div>
