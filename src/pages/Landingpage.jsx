@@ -312,16 +312,16 @@ const LandingPage = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-8">
     <h2 className="text-3xl sm:text-4xl font-semibold text-white">Frequently Asked Questions</h2>
     <p className="text-sm sm:text-lg mt-4 text-white">
-      Find answers to common questions about our platform and how to get started.
+      Find answers to common questions about our crypto security and recovery services.
     </p>
     <div className="mt-8 space-y-6">
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
           <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100 sm:text-base text-xs">
-            How do I sign up for the platform?
+            How do I secure my crypto assets on this platform?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            Signing up is easy! Simply click on the &quot;Sign Up Now&quot; button and fill out the necessary information. You’ll receive a confirmation email to complete your registration.
+            Our platform uses multi-layered encryption, cold storage wallets, and two-factor authentication to ensure the highest level of security for your crypto assets.
           </p>
         </details>
       </div>
@@ -329,10 +329,10 @@ const LandingPage = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
           <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100 sm:text-base text-xs">
-            Is my data safe on this platform?
+            What should I do if I suspect my account has been compromised?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            Absolutely! We use advanced encryption and security protocols to protect your personal and financial information. Your privacy is our top priority.
+            If you suspect your account has been compromised, immediately contact our support team. We offer emergency account recovery services to help secure your funds and recover your account.
           </p>
         </details>
       </div>
@@ -340,10 +340,10 @@ const LandingPage = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
           <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100 sm:text-base text-xs">
-            What cryptocurrencies can I use on this platform?
+            How can I recover lost or stolen crypto funds?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            We currently support Bitcoin, Ethereum, and several other major cryptocurrencies. You can easily add or withdraw funds using these assets.
+            If you've lost access to your crypto funds, our platform provides professional recovery services. Contact our recovery experts, and we'll guide you through the steps to retrieve your lost assets.
           </p>
         </details>
       </div>
@@ -351,10 +351,10 @@ const LandingPage = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
           <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100 sm:text-base text-xs">
-            How do I recover my account if I forget my password?
+            How do I protect my private keys and recovery phrases?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            If you have forgotten your password, simply click on the &quot;Forgot Password&quot; link on the login page, and follow the instructions to reset your password.
+            Keep your private keys and recovery phrases in a secure, offline location. We recommend using hardware wallets and other security measures to prevent unauthorized access to your crypto assets.
           </p>
         </details>
       </div>
@@ -362,16 +362,17 @@ const LandingPage = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
           <summary className="py-4 px-6 cursor-pointer text-lg font-medium text-gray-900 group-open:bg-blue-100 sm:text-base text-xs">
-            Can I trade on mobile devices?
+            How can I ensure my crypto transactions are secure?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            Yes! Our platform is fully mobile-responsive, so you can trade, view balances, and manage your account from your mobile device with ease.
+            Always double-check the recipient address and use two-factor authentication for transactions. Our platform also monitors transactions for suspicious activity and alerts you of any potential threats.
           </p>
         </details>
       </div>
     </div>
   </div>
 </section>
+
 
 
     </div>
