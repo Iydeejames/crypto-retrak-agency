@@ -3,7 +3,7 @@ import ScrollSection from "../components/reusables/ScrollSection";
 import { motion } from "framer-motion";
 
 
-import crypto1 from "../assets/images/crypto1.jpg";
+//import crypto1 from "../assets/images/crypto1.jpg";
 //import crypto2 from "../assets/images/crypto2.jpg";
 import crypto5 from "../assets/images/crypto5.jpg";
 import crypto3 from "../assets/images/crypto3.jpg";
@@ -44,11 +44,14 @@ const LandingPage = () => {
   <ScrollSection>
   <div className="relative z-10 flex items-center justify-center text-center px-4 sm:px-8">
     <div>
-      <h1 className="text-5xl sm:text-6xl mt-20 font-bold leading-tight text-white">
-        Tracking Crypto with Precision
-      </h1>
-      <p className="text-lg sm:text-2xl mt-4 text-white">
-        Comprehensive insights and analytics for your crypto journey
+    <h1 className="text-2xl sm:text-4xl md:text-5xl mt-20 font-bold leading-tight text-white">
+  The Best Platform to
+  <br />
+  Connect with Professional Recovery Experts!
+</h1>
+
+      <p className="text-sm sm:text-xl mt-4 text-white">
+      We are a team of experts dedicated to delivering exceptional security and recovery services across all industries.
       </p>
       <div className="mt-6">
   <motion.a
@@ -66,7 +69,7 @@ const LandingPage = () => {
       display: "inline-block",
     }}
   >
-    Get Started
+    Join Us!
   </motion.a>
 </div>
 
