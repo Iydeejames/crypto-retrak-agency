@@ -29,7 +29,7 @@ const Case = () => {
   return (
     <div className="min-h-screen bg-gray-900 py-10 px-4">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-bold text-center text-blue-600 mb-4">File a Case</h1>
+        <h1 className="text-3xl font-bold text-center text-red-600 mb-4">File a Case</h1>
         <p className="text-center text-gray-600 mb-6">
           Have an issue with your crypto trades? Lodge a complaint and we’ll assist you.
         </p>
@@ -108,7 +108,7 @@ const Case = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition"
+            className="w-full bg-red-600 text-white font-medium py-3 rounded-lg hover:bg-red-400 transition"
           >
             Submit Case
           </button>
