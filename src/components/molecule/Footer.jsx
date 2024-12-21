@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="text-white bg-gray-900">
       {/* Top Horizontal Line */}
-      <div className="w-5/6 mx-auto border-t-2 border-white"></div>
+      <div className="w-5/6 mx-auto border-t-[1px] border-white"></div>
 
       {/* Top Section (Contact Information) */}
       <div className="py-8 px-4 md:px-8 w-full">
@@ -15,7 +15,12 @@ const Footer = () => {
               <h4 className="font-bold mb-4 text-xs md:text-base">Contact Information</h4>
               <ul className="text-xs md:text-base">
                 <li>+1 (757) 235-2717</li>
-                <li>Cryptoretrackagency@gmail.com</li>
+                <li>              <a
+                href="mailto:Cryptoretrackagency@gmail.com"
+                className="text-sm sm:text-lg text-white hover:underline"
+              >
+                Cryptoretrackagency@gmail.com
+              </a></li>
                 <li>1190 Big Elm, Kansas City, Missouri, USA</li>
               </ul>
             </div>
