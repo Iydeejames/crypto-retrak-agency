@@ -60,7 +60,7 @@ const Blog = () => {
           <ul className="space-y-4">
             {searchResults.map((post, index) => (
               <li key={index} className="flex items-center space-x-2">
-                <a href={post.link} className="text-blue-600 hover:underline text-lg">{post.title}</a>
+                <a href={post.link} className="text-blue-600 hover:underline text-md">{post.title}</a>
                 <span className="text-gray-500 text-sm">({post.date})</span>
               </li>
             ))}
