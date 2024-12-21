@@ -8,6 +8,11 @@ import crypto1 from "../assets/images/crypto1.jpg";
 import crypto5 from "../assets/images/crypto5.jpg";
 import crypto3 from "../assets/images/crypto3.jpg";
 import crypto4 from "../assets/images/crypto4.jpg";
+import crypto6 from "../assets/images/crypto6.jpg";
+import crypto7 from "../assets/images/crypto7.jpg";
+import crypto8 from "../assets/images/crypto8.jpg";
+import crypto9 from "../assets/images/crypto9.jpg";
+import crypto10 from "../assets/images/crypto10.jpg";
 
 const LandingPage = () => {
   const images = [crypto5, crypto3, crypto4];
@@ -149,7 +154,7 @@ const LandingPage = () => {
     <div className="mt-8 space-y-12">
       {/* Recovery Services */}
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <img src={crypto1} alt="Recovery Services" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
+        <img src={crypto7} alt="Recovery Services" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
           <h3 className="text-3xl font-semibold">Complete Recovery Services</h3>
           <p className="mt-4 text-gray-300">
@@ -168,12 +173,12 @@ const LandingPage = () => {
           </p>
           <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
         </div>
-        <img src={crypto5} alt="Investment Scam" className="w-3/4 md:w-1/3 rounded-lg" />
+        <img src={crypto8} alt="Investment Scam" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
 
       {/* Academic Score Upgrade */}
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <img src={crypto3} alt="Academic Upgrade" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
+        <img src={crypto9} alt="Academic Upgrade" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
           <h3 className="text-3xl font-semibold">Academic Score Improvement</h3>
           <p className="mt-4 text-gray-300">
@@ -192,12 +197,12 @@ const LandingPage = () => {
           </p>
           <button className="mt-4 px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-500">Consult with an Expert</button>
         </div>
-        <img src={crypto4} alt="Mobile Security" className="w-3/4 md:w-1/3 rounded-lg" />
+        <img src={crypto10} alt="Mobile Security" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
 
       {/* Spy on Your Partner */}
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <img src={crypto3} alt="Spy on Partner" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
+        <img src={crypto6} alt="Spy on Partner" className="w-3/4 md:w-1/3 rounded-lg order-2 md:order-1" />
         <div className="flex-1 order-1 md:order-2">
           <h3 className="text-3xl font-semibold">Monitor Your Partner</h3>
           <p className="mt-4 text-gray-300">
