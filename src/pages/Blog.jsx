@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [posts, setPosts] = useState([
+  const [posts] = useState([
     { title: 'How to Recover Lost Crypto Wallets', link: '#', date: '2024-12-15' },
     { title: 'Top Crypto Trends in 2024', link: '#', date: '2024-12-10' },
     { title: 'Protecting Your Assets in the Crypto World', link: '#', date: '2024-12-08' },
@@ -67,7 +67,7 @@ const Blog = () => {
           </ul>
         </div>
       ) : searchQuery && (
-        <p className="text-gray-500 text-center">No results found for "{searchQuery}"</p>
+        <p className="text-gray-500 text-center">No results found for &quot;{searchQuery}&quot;</p>
       )}
 
       {/* Blog Content Section */}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ScrollSection from "../components/reusables/ScrollSection";
 import { motion } from "framer-motion";
+import ChatPopup from "../components/reusables/ChatPopup";
 
 
 //import crypto1 from "../assets/images/crypto1.jpg";
@@ -343,7 +344,7 @@ const LandingPage = () => {
             How can I recover lost or stolen crypto funds?
           </summary>
           <p className="px-6 py-4 text-gray-600 text-xs sm:text-sm">
-            If you've lost access to your crypto funds, our platform provides professional recovery services. Contact our recovery experts, and we'll guide you through the steps to retrieve your lost assets.
+            If you&apos;ve lost access to your crypto funds, our platform provides professional recovery services. Contact our recovery experts, and we&apos;ll guide you through the steps to retrieve your lost assets.
           </p>
         </details>
       </div>
@@ -373,9 +374,10 @@ const LandingPage = () => {
   </div>
 </section>
 
-
+<ChatPopup className="absolute bottom-4 right-4" />
 
     </div>
+    
   );
 };
 
@@ -388,12 +390,6 @@ const FeatureCard = ({ title, description }) => (
 );
 
 // eslint-disable-next-line react/prop-types
-const StepCard = ({ title, description }) => (
-  <div className="w-72 m-4 bg-gray-900 p-6 rounded-lg shadow-lg">
-    <h3 className="text-xl font-semibold text-white">{title}</h3>
-    <p className="mt-4 text-gray-300">{description}</p>
-  </div>
-);
 
 
 export default LandingPage;

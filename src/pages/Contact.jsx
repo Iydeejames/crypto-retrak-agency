@@ -11,7 +11,7 @@ const Contact = () => {
       <header className="text-center py-16">
         <h1 className="text-4xl sm:text-5xl font-bold">Get in Touch</h1>
         <p className="mt-4 text-base sm:text-lg text-gray-200">
-          We'd love to hear from you. Let's make something great together.
+          We&apos;d love to hear from you. Let&apos;s make something great together.
         </p>
       </header>
 
