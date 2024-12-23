@@ -32,16 +32,18 @@ const Footer = () => {
       <div className="bg-gray-900 w-full">
         <div className="container mx-auto px-4 md:px-8 pt-6">
           <div className="flex items-center justify-center">
-            {/* Left Line */}
+            {/* Left Line
             <div className="flex-grow border-t border-white mr-4"></div>
+            */}
 
             {/* Center Content */}
             <div className="flex items-center text-white space-x-2">
               <img src={Logo} alt="Logo" className="h-12 w-auto object-contain" />
             </div>
 
-            {/* Right Line */}
+            {/* Right Line 
             <div className="flex-grow border-t border-white ml-4"></div>
+            */}
           </div>
         </div>
       </div>
