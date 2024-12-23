@@ -37,7 +37,7 @@ const ChatPopup = () => {
           position: 'fixed',
           bottom: '20px',
           right: '20px',
-          backgroundColor: '#2D3748', // gray-900
+          backgroundColor: 'green', // gray-900
           color: 'white',
           border: 'none',
           borderRadius: '50%',
@@ -60,19 +60,19 @@ const ChatPopup = () => {
             right: '20px',
             width: '350px',
             height: '450px',
-            backgroundColor: '#ffffff',
+            backgroundColor: 'green',
             borderRadius: '10px',
             boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
             display: 'flex',
             flexDirection: 'column',
             zIndex: 999,
-            border: '1px solid #ddd',
+            border: '1px solid #ddd', 
           }}
         >
           {/* Chat Header */}
           <div
             style={{
-              backgroundColor: '#2D3748', // gray-900
+              backgroundColor: 'green', // gray-900
               color: 'white',
               padding: '15px',
               borderTopLeftRadius: '10px',
@@ -84,7 +84,7 @@ const ChatPopup = () => {
               alignItems: 'center',
             }}
           >
-            <span>Chat with us</span>
+            <span>Crypto Retracker</span>
             <button
               onClick={toggleChatVisibility}
               style={{
@@ -154,7 +154,7 @@ const ChatPopup = () => {
               onClick={handleSendMessage}
               style={{
                 padding: '10px 15px',
-                backgroundColor: '#2D3748', // gray-900
+                backgroundColor: 'green', // gray-900
                 color: 'white',
                 border: 'none',
                 borderRadius: '8px',
