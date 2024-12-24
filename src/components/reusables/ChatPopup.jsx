@@ -114,8 +114,8 @@ const ChatPopup = () => {
                 key={index}
                 style={{
                   alignSelf: msg.sender === 'User' ? 'flex-end' : 'flex-start',
-                  backgroundColor: msg.sender === 'User' ? '#2D3748' : '#ddd', // gray-900 for user
-                  color: msg.sender === 'User' ? 'white' : 'black',
+                  backgroundColor: msg.sender === 'User' ? 'lightgreen' : '#ddd', // gray-900 for user
+                  color: msg.sender === 'User' ? 'black' : 'black',
                   borderRadius: '8px',
                   padding: '10px',
                   maxWidth: '80%',

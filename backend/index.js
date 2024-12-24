@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 // Load environment variables from the .env file
 require('dotenv').config();
 
 // Import required modules
-const express = require('express');
+import express from 'express';
 
 // Create an Express app
 const app = express();
