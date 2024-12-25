@@ -374,14 +374,14 @@ const LandingPage = () => {
   </div>
 </section>
 
-<ChatPopup className="absolute bottom-4 right-4" />
+ 
 
     </div>
     
   );
 };
 
-// eslint-disable-next-line react/prop-types
+// eslint-disable-next-line react/prop-types 
 const FeatureCard = ({ title, description }) => (
   <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold text-white">{title}</h3>
