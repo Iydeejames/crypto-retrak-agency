@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMessage } from 'react-icons/ai';
 
 const ChatPopup = () => {
@@ -6,25 +6,46 @@ const ChatPopup = () => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
 
+  // Toggle chat visibility
   const toggleChatVisibility = () => {
     if (isChatVisible) {
-      // Clear messages when the chat is closed
-      setMessages([]);
+      setMessages([]); // Clear messages when closing the chat
     }
     setChatVisible(!isChatVisible);
   };
 
+  // Handle sending message and generating a response
   const handleSendMessage = () => {
     if (message.trim()) {
-      setMessages([...messages, { text: message, sender: 'User' }]);
+      // Add the user's message
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: message, sender: 'User' },
+      ]);
       setMessage('');
-      // Simulate bot response after a delay
+
+      // Generate a dynamic bot response based on the user's message
       setTimeout(() => {
+        const botResponse = generateBotResponse(message);
         setMessages((prevMessages) => [
           ...prevMessages,
-          { text: 'This is a bot response.', sender: 'Bot' },
+          { text: botResponse, sender: 'Bot' },
         ]);
       }, 1000);
+    }
+  };
+
+  // Function to generate bot responses based on user input
+  const generateBotResponse = (userMessage) => {
+    // Basic dynamic response logic
+    if (userMessage.toLowerCase().includes('hello')) {
+      return 'Hi there! How can I help you today?';
+    } else if (userMessage.toLowerCase().includes('price')) {
+      return 'The price of the crypto is $50,000.';
+    } else if (userMessage.toLowerCase().includes('crypto')) {
+      return 'Crypto market is volatile. Be cautious with investments.';
+    } else {
+      return "Sorry, I didn't quite catch that. Can you please rephrase?";
     }
   };
 
@@ -37,7 +58,7 @@ const ChatPopup = () => {
           position: 'fixed',
           bottom: '20px',
           right: '20px',
-          backgroundColor: 'green', // gray-900
+          backgroundColor: 'green',
           color: 'white',
           border: 'none',
           borderRadius: '50%',
@@ -66,13 +87,13 @@ const ChatPopup = () => {
             display: 'flex',
             flexDirection: 'column',
             zIndex: 999,
-            border: '1px solid #ddd', 
+            border: '1px solid #ddd',
           }}
         >
           {/* Chat Header */}
           <div
             style={{
-              backgroundColor: 'green', // gray-900
+              backgroundColor: 'green',
               color: 'white',
               padding: '15px',
               borderTopLeftRadius: '10px',
@@ -114,7 +135,7 @@ const ChatPopup = () => {
                 key={index}
                 style={{
                   alignSelf: msg.sender === 'User' ? 'flex-end' : 'flex-start',
-                  backgroundColor: msg.sender === 'User' ? 'lightgreen' : '#ddd', // gray-900 for user
+                  backgroundColor: msg.sender === 'User' ? 'lightgreen' : '#ddd',
                   color: msg.sender === 'User' ? 'black' : 'black',
                   borderRadius: '8px',
                   padding: '10px',
@@ -154,7 +175,7 @@ const ChatPopup = () => {
               onClick={handleSendMessage}
               style={{
                 padding: '10px 15px',
-                backgroundColor: 'green', // gray-900
+                backgroundColor: 'green',
                 color: 'white',
                 border: 'none',
                 borderRadius: '8px',
