@@ -15,7 +15,7 @@ const ChatPopup = () => {
   };
 
   // Handle sending message and generating a response
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (message.trim()) {
       // Add the user's message
       setMessages((prevMessages) => [
@@ -24,28 +24,41 @@ const ChatPopup = () => {
       ]);
       setMessage('');
 
-      // Generate a dynamic bot response based on the user's message
-      setTimeout(() => {
-        const botResponse = generateBotResponse(message);
+      // Simulate a server call
+      try {
+        const botResponse = await fetchBotResponse(message);
         setMessages((prevMessages) => [
           ...prevMessages,
           { text: botResponse, sender: 'Bot' },
         ]);
-      }, 1000);
+      } catch (error) {
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { text: 'Sorry, I could not connect to the server. Please try again later.', sender: 'Bot' },
+        ]);
+      }
     }
   };
 
-  // Function to generate bot responses based on user input
-  const generateBotResponse = (userMessage) => {
-    // Basic dynamic response logic
-    if (userMessage.toLowerCase().includes('hello')) {
-      return 'Hi there! How can I help you today?';
-    } else if (userMessage.toLowerCase().includes('price')) {
-      return 'The price of the crypto is $50,000.';
-    } else if (userMessage.toLowerCase().includes('crypto')) {
-      return 'Crypto market is volatile. Be cautious with investments.';
-    } else {
-      return "Sorry, I didn't quite catch that. Can you please rephrase?";
+  // Fetching bot response from server
+  const fetchBotResponse = async (userMessage) => {
+    try {
+      const response = await fetch('http://localhost:5000/api/get-response', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userMessage }),
+      });
+
+      // Handle non-200 responses
+      if (!response.ok) {
+        throw new Error('Failed to fetch bot response');
+      }
+
+      const data = await response.json();
+      return data.botResponse;
+    } catch (error) {
+      console.error('Error fetching bot response:', error);
+      return 'Sorry, I could not connect to the server. Please try again later.';
     }
   };
 
@@ -136,7 +149,7 @@ const ChatPopup = () => {
                 style={{
                   alignSelf: msg.sender === 'User' ? 'flex-end' : 'flex-start',
                   backgroundColor: msg.sender === 'User' ? 'lightgreen' : '#ddd',
-                  color: msg.sender === 'User' ? 'black' : 'black',
+                  color: 'black',
                   borderRadius: '8px',
                   padding: '10px',
                   maxWidth: '80%',

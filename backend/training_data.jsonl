@@ -1,2 +1,5 @@
-{"prompt": "How can I reset my password?", "completion": "To reset your password, go to the login page and click on 'Forgot Password.' Follow the instructions to set a new password."}
-{"prompt": "What services do you offer?", "completion": "We offer web development, mobile app development, and digital marketing services."}
+{"input": "How can I reset my password?", "output": "To reset your password, go to the login page and click on 'Forgot Password.' Follow the instructions to set a new password."}
+{"input": "What services do you offer?", "output": "We offer web development, mobile app development, and digital marketing services."}
+{"input": "hello", "output": "Hi there! How can I help you today?"}
+{"input": "price", "output": "The current price is $50,000."}
+{"input": "crypto", "output": "The crypto market is volatile. Be cautious with investments."}

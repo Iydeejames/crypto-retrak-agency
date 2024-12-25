@@ -1,53 +1,43 @@
-// server.js (Backend using Express)
-
 const express = require('express');
-const { Configuration, OpenAIApi } = require("openai");
-require('dotenv').config();
+const fs = require('fs');
+const bodyParser = require('body-parser');
+const cors = require('cors');  // Import cors
 
 const app = express();
-const port = 5000;
 
-app.use(express.json());
+// Enable CORS with specific settings
+app.use(cors({
+  origin: 'http://localhost:3000',  // Allow requests from your React frontend's port (adjust if needed)
+  methods: ['GET', 'POST'],        // Allowed methods
+  allowedHeaders: ['Content-Type'], // Allowed headers
+}));
 
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+app.use(bodyParser.json());
 
-const openai = new OpenAIApi(configuration);
+// Read training data from JSONL file
+const trainingData = fs.readFileSync('./backend/training_data.jsonl', 'utf8')
+  .split('\n')
+  .filter(Boolean)
+  .map(JSON.parse);
 
-// Initialize an empty conversation history
-let conversationHistory = [];
+// Endpoint to get bot response
+app.post('/api/get-response', (req, res) => {
+  const { userMessage } = req.body;
 
-app.post('/chat', async (req, res) => {
-  const userMessage = req.body.message;
+  // Find a matching response from the training data
+  const response = trainingData.find(data =>
+    userMessage.toLowerCase().includes(data.input.toLowerCase())
+  );
 
-  if (userMessage.trim()) {
-    // Add user's message to the conversation history
-    conversationHistory.push({ role: "user", content: userMessage });
-
-    // Call OpenAI API with the conversation history for context awareness
-    try {
-      const response = await openai.createChatCompletion({
-        model: "gpt-4",
-        messages: conversationHistory,
-      });
-
-      const botReply = response.data.choices[0].message.content;
-
-      // Add bot's reply to the conversation history
-      conversationHistory.push({ role: "assistant", content: botReply });
-
-      res.json({ response: botReply });
-
-    } catch (error) {
-      console.error("Error with OpenAI API: ", error);
-      res.status(500).send("Error with API request.");
-    }
+  if (response) {
+    res.json({ botResponse: response.output });
   } else {
-    res.status(400).send("Message is required.");
+    res.json({ botResponse: "I'm sorry, I didn't understand that." });
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+// Start server
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
