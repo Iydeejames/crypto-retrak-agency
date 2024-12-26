@@ -45,15 +45,17 @@ const LandingPage = () => {
   <ScrollSection>
   <div className="relative z-10 flex items-center justify-center text-center px-4 sm:px-8">
     <div>
-    <h1 className="text-2xl sm:text-4xl md:text-5xl mt-20 font-bold leading-tight text-white">
-  The Best Platform to
-  <br />
-  Connect with Professional Recovery Experts!
-</h1>
+    <div className="text-left"> 
+  <h1 className="text-2xl sm:text-4xl md:text-5xl mt-20 font-bold leading-tight text-white">
+    The Best Platform to
+    <br />
+    Connect with Professional Recovery Experts!
+  </h1>
 
-      <p className="text-sm sm:text-xl mt-4 text-white">
-      We are a team of experts dedicated to delivering exceptional security and recovery services across all industries.
-      </p>
+  <p className="text-sm sm:text-xl mt-4 text-white">
+    We are a team of experts dedicated to delivering exceptional security and recovery services across all industries.
+  </p>
+</div>
       <div className="mt-6">
 
   <motion.a
