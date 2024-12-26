@@ -36,7 +36,7 @@ app.post('/api/get-response', (req, res) => {
   }
 });
 
-// Start server
+// Starts server
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
