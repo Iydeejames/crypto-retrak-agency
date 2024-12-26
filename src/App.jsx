@@ -23,7 +23,7 @@ const LandbotWidget = () => {
 
         script.addEventListener('load', () => {
           window.myLandbot = new window.Landbot.Livechat({
-            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2730671-DS3F90S5C7ENBF36/index.json',
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2731401-HKO7OE81MLN8FD61/index.json', // Update with your Landbot config URL
           });
         });
 

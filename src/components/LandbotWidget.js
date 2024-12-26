@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 const LandbotWidget = () => {
   useEffect(() => {
+    // Function to initialize the Landbot widget
     const initLandbot = () => {
       if (!window.myLandbot) {
         const script = document.createElement('script');
@@ -10,7 +11,7 @@ const LandbotWidget = () => {
 
         script.addEventListener('load', () => {
           window.myLandbot = new window.Landbot.Livechat({
-            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2730671-DS3F90S5C7ENBF36/index.json',
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2731401-HKO7OE81MLN8FD61/index.json', // Updated URL
           });
         });
 
@@ -21,20 +22,18 @@ const LandbotWidget = () => {
       }
     };
 
+    // Trigger initialization on mouseover or touchstart events
     window.addEventListener('mouseover', initLandbot, { once: true });
     window.addEventListener('touchstart', initLandbot, { once: true });
 
+    // Cleanup event listeners on component unmount
     return () => {
       window.removeEventListener('mouseover', initLandbot);
       window.removeEventListener('touchstart', initLandbot);
     };
   }, []);
 
-  return (
-    <div className="fixed bottom-0 right-0 p-4 z-50">
-      {/* No need for an actual element, the script will trigger the bot */}
-    </div>
-  );
+  return null;
 };
 
 export default LandbotWidget;
