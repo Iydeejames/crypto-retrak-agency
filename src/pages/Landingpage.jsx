@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ScrollSection from "../components/reusables/ScrollSection";
 import { motion } from "framer-motion";
-import ChatPopup from "../components/reusables/ChatPopup";
+//import ChatPopup from "../components/reusables/ChatPopup";
 
 
 //import crypto1 from "../assets/images/crypto1.jpg";
@@ -55,9 +55,9 @@ const LandingPage = () => {
       We are a team of experts dedicated to delivering exceptional security and recovery services across all industries.
       </p>
       <div className="mt-6">
+
   <motion.a
-    href="#explore"
-    className="px-6 py-2 text-lg font-semibold text-white bg-red-500 rounded-lg transition-colors duration-300 hover:bg-white hover:text-red-500"
+    className="px-6 py-2 text-lg font-semibold text-white bg-red-500 rounded-lg transition-colors duration-300 "
     animate={{
       x: [0, -5, 5, 0], // Shaking motion
     }}
@@ -208,7 +208,9 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             We offer full recovery services including private investigations, tracking, and spy operations. Our proven and secure process ensures your peace of mind.
           </p>
+          <a href="/Case" className="inline-block">
           <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
+          </a>
         </div>
       </div>
 
@@ -219,8 +221,9 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Many have fallen victim to fraudulent investment schemes. If you are one of them, get in touch with an expert to begin the recovery process.
           </p>
+          <a href="/Case" className="inline-block">
           <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
-        </div>
+          </a>        </div>
         <img src={crypto8} alt="Investment Scam" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
 
@@ -232,8 +235,10 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Concerned about your academic performance? We guarantee a score upgrade to match your needs without detection by school authorities.
           </p>
+          <a href="/Case" className="inline-block">
           <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
-        </div>
+          </a>
+          </div>
       </div>
 
       {/* Mobile Phone Security */}
@@ -243,8 +248,10 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Your mobile phone contains sensitive information. Our expert team can deploy a covert security solution to monitor and secure your mobile device remotely.
           </p>
+          <a href="/Case" className="inline-block">
           <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
-        </div>
+          </a>        
+          </div>
         <img src={crypto10} alt="Mobile Security" className="w-3/4 md:w-1/3 rounded-lg" />
       </div>
 
@@ -256,8 +263,10 @@ const LandingPage = () => {
           <p className="mt-4 text-gray-300 text-xs sm:text-base">
             Suspect your partner isn’t being truthful? With our discreet monitoring solution, you can find out the truth without accessing their device.
           </p>
+          <a href="/Case" className="inline-block">
           <button className="mt-4 px-4 py-2 bg-red-600 rounded-lg text-white hover:bg-red-500 text-xs sm:px-6 sm:py-3 sm:text-base">  Consult with an Expert</button>
-        </div>
+          </a>
+          </div>
       </div>
     </div>
   </div>
@@ -374,22 +383,20 @@ const LandingPage = () => {
   </div>
 </section>
 
- 
+ {/* <ChatPopup className="absolute bottom-4 right-4"/> */}
 
     </div>
     
   );
 };
 
-// eslint-disable-next-line react/prop-types 
+// eslint-disable-next-line react/prop-types
 const FeatureCard = ({ title, description }) => (
   <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold text-white">{title}</h3>
     <p className="mt-4 text-xs sm:text-lg text-gray-300">{description}</p>
   </div>
 );
-
-// eslint-disable-next-line react/prop-types
 
 
 export default LandingPage;

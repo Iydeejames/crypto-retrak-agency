@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS with specific settings
 app.use(cors({
-  origin: 'http://localhost:3000',  // Allow requests from your React frontend's port (adjust if needed)
+  origin: 'http://localhost:3000',  // Allow requests from your React frontend's port 
   methods: ['GET', 'POST'],        // Allowed methods
   allowedHeaders: ['Content-Type'], // Allowed headers
 }));
