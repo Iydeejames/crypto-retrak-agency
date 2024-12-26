@@ -31,6 +31,7 @@ const ChatPopup = () => {
           ...prevMessages,
           { text: botResponse, sender: 'Bot' },
         ]);
+      // eslint-disable-next-line no-unused-vars
       } catch (error) {
         setMessages((prevMessages) => [
           ...prevMessages,

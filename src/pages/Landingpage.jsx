@@ -111,6 +111,7 @@ const LandingPage = () => {
 
 <section className="py-12 bg-white">
   <div className="max-w-7xl mx-auto text-center px-4 sm:px-8">
+  <ScrollSection>
     <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">Our Key Metrics</h2>
     <p className="text-xs sm:text-sm mt-4 text-gray-600">
       A snapshot of how we perform across different areas
@@ -148,6 +149,7 @@ const LandingPage = () => {
         <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-medium text-gray-900">Corporate Management</h3>
       </div>
     </div>
+    </ScrollSection>
   </div>
 </section>
 
@@ -324,6 +326,7 @@ const LandingPage = () => {
     <p className="text-sm sm:text-lg mt-4 text-white">
       Find answers to common questions about our crypto security and recovery services.
     </p>
+    <ScrollSection>
     <div className="mt-8 space-y-6">
       <div className="max-w-3xl mx-auto px-4 sm:px-0">
         <details className="group rounded-lg bg-gray-50 shadow-lg">
@@ -380,6 +383,7 @@ const LandingPage = () => {
         </details>
       </div>
     </div>
+    </ScrollSection>
   </div>
 </section>
 
