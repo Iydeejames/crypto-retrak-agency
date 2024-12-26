@@ -57,7 +57,7 @@ const LandingPage = () => {
       <div className="mt-6">
 
   <motion.a
-    className="px-6 py-2 text-lg font-semibold text-white bg-red-500 rounded-lg transition-colors duration-300 "
+    className="px-6 py-2 text-lg font-semibold text-white bg-green-500 rounded-xs transition-colors duration-300 "
     animate={{
       x: [0, -5, 5, 0], // Shaking motion
     }}
