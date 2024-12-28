@@ -1,9 +1,55 @@
-import { useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const formRef = useRef();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await emailjs.sendForm(
+        "service_yjmpeug", // Your Service ID
+        "template_i2nces9", // Your Template ID
+        formRef.current, // Reference to the form
+        "hDdVYov0Kw6aPHr9L" // Your Public Key
+      );
+
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Message sent successfully!");
+
+      // Reset the form
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      formRef.current.reset();
+    } catch (error) {
+      console.error("FAILED...", error);
+      alert("Failed to send the message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
@@ -22,7 +68,11 @@ const Contact = () => {
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">
             Send Us a Message
           </h2>
-          <form className="space-y-4 sm:space-y-6">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="space-y-4 sm:space-y-6"
+          >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-1 sm:mb-2">
                 Full Name
@@ -30,8 +80,12 @@ const Contact = () => {
               <input
                 id="name"
                 type="text"
+                name="name"
                 placeholder="Enter your name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-2 sm:p-3 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
             </div>
             <div>
@@ -41,8 +95,12 @@ const Contact = () => {
               <input
                 id="email"
                 type="email"
+                name="email"
                 placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-2 sm:p-3 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
             </div>
             <div>
@@ -51,16 +109,23 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 placeholder="Write your message"
                 rows="4"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-2 sm:p-3 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 sm:py-3 sm:px-6 bg-gray-900 text-white rounded-lg font-medium hover:bg-red-700 transition duration-300"
+              className={`w-full py-2 px-4 sm:py-3 sm:px-6 ${
+                isSubmitting ? "bg-gray-400" : "bg-gray-900"
+              } text-white rounded-lg font-medium hover:bg-red-700 transition duration-300`}
+              disabled={isSubmitting}
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
         </section>
