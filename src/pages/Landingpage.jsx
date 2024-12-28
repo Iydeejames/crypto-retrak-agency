@@ -295,7 +295,7 @@ const LandingPage = () => {
           review: 'This platform has been a game-changer for me. I can track everything in one place, and the interface is so easy to use. Highly recommend it to anyone!',
         },
         {
-          name: 'Tomiwa Felix',
+          name: 'Emily Wellsworth',
           review: 'I was skeptical at first, but this service truly delivers. The support team is quick to respond, and I’ve seen great results. Worth every penny!',
         },
         {
