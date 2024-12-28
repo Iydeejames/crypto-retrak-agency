@@ -43,43 +43,42 @@ const LandingPage = () => {
   {/* Dark effect overlay */}
   <div className="absolute inset-0 bg-black opacity-75"></div>
   <ScrollSection>
-  <div className="relative z-10 flex items-center justify-center text-center px-4 sm:px-8">
-    <div>
-    <div className="text-left"> 
-  <h1 className="text-2xl sm:text-4xl md:text-5xl mt-20 font-bold leading-tight text-white">
-    The Best Platform to
-    <br />
-    Connect with Professional Recovery Experts!
-  </h1>
+    <div className="relative z-10 flex items-start justify-start text-left px-4 sm:px-8 mt-40">
+      <div>
+        <div className="text-left">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight text-white">
+            The Best Platform to
+            <br />
+            <span className="text-white">Connect</span> with <span className="text-green-500">Professional</span> Recovery <span className="text-green-500">Experts</span>!
+          </h1>
 
-  <p className="text-sm sm:text-xl mt-4 text-white">
-    We are a team of experts dedicated to delivering exceptional security and recovery services across all industries.
-  </p>
-</div>
-      <div className="mt-6">
-
-  <motion.a
-    className="px-6 py-2 text-lg font-semibold text-white bg-green-500 rounded-xs transition-colors duration-300 "
-    animate={{
-      x: [0, -5, 5, 0], // Shaking motion
-    }}
-    transition={{
-      repeat: Infinity, // Infinite loop
-      repeatType: "loop", // Continuous loop
-      duration: 1, // Speed of shaking
-    }}
-    style={{
-      display: "inline-block",
-    }}
-  >
-    Join Us!
-  </motion.a>
-</div>
-
+          <p className="text-sm sm:text-xl mt-4 text-white">
+            We are a team of experts dedicated to delivering exceptional <span className="text-green-500">security</span> and <span className="text-green-500">recovery</span> services across all industries.
+          </p>
+        </div>
+        <div className="mt-6">
+          <motion.a
+            className="px-6 py-2 text-lg font-semibold text-white bg-green-500 rounded-xs transition-colors duration-300"
+            animate={{
+              x: [0, -5, 5, 0], // Shaking motion
+            }}
+            transition={{
+              repeat: Infinity, // Infinite loop
+              repeatType: "loop", // Continuous loop
+              duration: 1, // Speed of shaking
+            }}
+            style={{
+              display: "inline-block",
+            }}
+          >
+            Join Us!
+          </motion.a>
+        </div>
+      </div>
     </div>
-  </div>
   </ScrollSection>
 </section>
+
 
 
 
