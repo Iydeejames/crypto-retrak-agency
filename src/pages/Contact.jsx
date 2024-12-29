@@ -30,7 +30,7 @@ const Contact = () => {
         "service_yjmpeug", // Your Service ID
         "template_i2nces9", // Your Template ID
         formRef.current, // Reference to the form
-        "hDdVYov0Kw6aPHr9L" // Your Public Key
+        "4Pg_bpFCvPidWKccd" // Your Public Key
       );
 
       console.log("SUCCESS!", response.status, response.text);

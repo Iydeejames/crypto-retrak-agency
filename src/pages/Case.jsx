@@ -51,7 +51,7 @@ const Case = () => {
         "service_yjmpeug", // Replace with your Service ID
         "template_6owemii", // Replace with your Template ID
         formRef.current, // Form reference
-        "hDdVYov0Kw6aPHr9L" // Replace with your Public Key
+        "4Pg_bpFCvPidWKccd" // Replace with your Public Key
       );
 
       console.log("SUCCESS!", response.status, response.text);
